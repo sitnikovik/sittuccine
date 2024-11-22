@@ -2,15 +2,6 @@
 	"name": "sit-monokai",
 	"$schema": "vscode://schemas/color-theme",
 	"type": "dark",
-    "semanticTokenColors": {
-		"namespace": {
-			"foreground": "#FFD700", // Золотистый цвет для пакетов
-			"fontStyle": "italic"
-		},
-		"variable": {
-			"foreground": "#FFFFFF" // Белый цвет для переменных
-		}
-	},
 	"colors": {
 		"activityBarBadge.background": "#007acc",
 		"editor.background": "#1e1e1e",
@@ -652,7 +643,7 @@
 		//"symbolIcon.keywordForeground": "#cccccc",
 		//"symbolIcon.methodForeground": "#b180d7",
 		//"symbolIcon.moduleForeground": "#cccccc",
-		//"symbolIcon.namespaceForeground": "#cccccc",
+		// "symbolIcon.namespaceForeground": "#dfd97d",
 		//"symbolIcon.nullForeground": "#cccccc",
 		//"symbolIcon.numberForeground": "#cccccc",
 		//"symbolIcon.objectForeground": "#cccccc",
@@ -1014,6 +1005,48 @@
 				"foreground": "#E06C75"
 			}
 		},
+		// >--- GO
+		{
+            "scope": [
+                "entity.name.namespace.go",
+                "support.type.go",
+                "entity.name.module.go"
+            ],
+            "settings": {
+                "foreground": "#ff00cc", // Золотистый цвет для пакетов в Go
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": [
+                "support.function.go",
+                "entity.name.function.go"
+            ],
+            "settings": {
+                "foreground": "#0004ff", // Золотистый цвет для функций пакетов в Go
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": [
+                "meta.import.go",
+                "meta.package.go"
+            ],
+            "settings": {
+                "foreground": "#938326", // Золотистый цвет для импортов и пакетов в Go
+                "fontStyle": "italic"
+            }
+        },
+		{
+            "scope": [
+                "entity.name.package.go"
+            ],
+            "settings": {
+                "foreground": "#FFD700", // Золотистый цвет для пакетов в Go
+                "fontStyle": "italic"
+            }
+        },
+		// <--- GO
 		{
 			"scope": [
 				"entity.name.class",
