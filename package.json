@@ -1,0 +1,26 @@
+{
+    "name": "sit-monokai",
+    "displayName": "Sit Monokai",
+    "description": "A custom Monokai theme for VSCode.",
+    "version": "1.0.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/sitnikovik/sit-monokai-theme"
+    },
+    "engines": {
+      "vscode": "^1.50.0"
+    },
+    "categories": [
+      "Themes"
+    ],
+    "contributes": {
+      "themes": [
+        {
+          "label": "Sit+ Monokai",
+          "uiTheme": "vs-dark",
+          "path": "./themes/sit_plus_monokai.json"
+        }
+      ]
+    }
+  }
+  
