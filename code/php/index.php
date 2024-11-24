@@ -1,63 +1,226 @@
 <?php
 
-require_once __DIR__ . '/Human/Human.php';
-require_once __DIR__ . '/Human/Woman.php';
-
-use Human\Woman;
+/**
+ * Constants
+ */
+const PI = 3.14159;
+const MAX_BUFFER_SIZE = 1024;
 
 /**
- * Run the application
- * 
- * @return void
- * @throws Exception
+ * Enumerations
  */
-function run(): void 
-{
-    $kittyRurk = new Woman('Kitty Rurk', 0);
-    $aliceCoul = new Woman('Alice Coul', 20);
-    $rileySteele = new Woman('Riley Steele', 25);
+enum Days {
+    case SUNDAY;
+    case MONDAY;
+    case TUESDAY;
+    case WEDNESDAY;
+    case THURSDAY;
+    case FRIDAY;
+    case SATURDAY;
+}
 
-    $v = 1;
-    for ($i = 0; $i < 10; $i++) {
-        $v += 1;
-        println("v: $v");
+/**
+ * Interface for a person
+ */
+interface IPerson {
+    /**
+     * Get the name of the person
+     *
+     * @return string
+     */
+    public function getName(): string;
+
+    /**
+     * Get the age of the person
+     *
+     * @return int
+     */
+    public function getAge(): int;
+
+    /**
+     * Greet the person
+     *
+     * @return void
+     */
+    public function greet(): void;
+}
+
+/**
+ * Abstract class representing a person
+ */
+abstract class AbstractPerson implements IPerson {
+    protected readonly string $name;
+    protected readonly int $age;
+
+    /**
+     * Constructor
+     *
+     * @param string $name
+     * @param int $age
+     */
+    public function __construct(string $name, int $age) {
+        $this->name = $name;
+        $this->age = $age;
     }
 
-    $women = [
-        $kittyRurk,
-        $aliceCoul, 
-        $rileySteele,
-    ];
-    foreach ($women as $i => $woman) {
-        try {
-            if (empty($woman->age)) {
-                throw new Exception("{$woman->name} is too young");
-            }
-            if ($woman->age <= 17) {
-                throw new Exception("{$woman->name} is not an adult");
-            }
-            if ($woman->age >= 80) {
-                throw new Exception("{$woman->name} is too old");
-            }
+    /**
+     * Get the name of the person
+     *
+     * @return string
+     */
+    public function getName(): string {
+        return $this->name;
+    }
 
-            $nameMsg = sprintf("Got woman named {$woman->name} and %d old.", $woman->age);
-            println($nameMsg);
-            $woman->run();
-        } catch (\Throwable $th) {
-            println('Exception: ' . $th->getMessage());
+    /**
+     * Get the age of the person
+     *
+     * @return int
+     */
+    public function getAge(): int {
+        return $this->age;
+    }
+
+    /**
+     * Greet the person
+     *
+     * @return void
+     */
+    abstract public function greet(): void;
+}
+
+/**
+ * Final class representing a person
+ */
+final class Person extends AbstractPerson {
+    /**
+     * Greet the person
+     *
+     * @return void
+     */
+    public function greet(): void {
+        echo "Hello, {$this->name}!\n";
+    }
+}
+
+/**
+  * Add two numbers
+  *
+  * @param int $a
+  * @param int $b
+  * @return int
+  */
+function add(int $a, int $b): int {
+    return $a + $b;
+}
+
+/**
+ * Handle an error
+ *
+ * @param string $message
+ * @return void
+ */
+function handleError(string $message): void {
+    echo "Error: {$message}\n";
+}
+
+/**
+ * Generator function to yield numbers
+ *
+ * @param int $max
+ * @return Generator
+ */
+function generateNumbers(int $max): Generator {
+    for ($i = 0; $i < $max; $i++) {
+        yield $i;
+    }
+}
+
+/**
+ * Main script
+ *
+ * @return void
+ */
+function main(): void {
+    // Variable declarations
+    $a = 5;
+    $b = 10;
+    $result = 0;
+    $buffer = '';
+
+    // Array
+    $numbers = [1, 2, 3, 4, 5];
+
+    // Conditional statements
+    if ($a > $b) {
+        echo "a is greater than b\n";
+    } elseif ($a < $b) {
+        echo "a is less than b\n";
+    } else {
+        echo "a is equal to b\n";
+    }
+
+    // Switch statement
+    $today = Days::WEDNESDAY;
+    switch ($today) {
+        case Days::SUNDAY:
+        case Days::SATURDAY:
+            echo "It's the weekend!\n";
+            break;
+        default:
+            echo "It's a weekday.\n";
+            break;
+    }
+
+    // Loop statements
+    for ($i = 0; $i < count($numbers); $i++) {
+        echo "numbers[{$i}] = {$numbers[$i]}\n";
+    }
+
+    $i = 0;
+    while ($i < count($numbers)) {
+        echo "numbers[{$i}] = {$numbers[$i]}\n";
+        $i++;
+    }
+
+    $i = 0;
+    do {
+        echo "numbers[{$i}] = {$numbers[$i]}\n";
+        $i++;
+    } while ($i < count($numbers));
+
+    // Function calls
+    $result = add($a, $b);
+    echo "The sum of {$a} and {$b} is {$result}\n";
+
+    $person = new Person("John Doe", 30);
+    $person->greet();
+
+    // Error handling
+    try {
+        if (false) { // Simulate an error
+            throw new Exception("Simulated error");
         }
+    } catch (Exception $e) {
+        handleError($e->getMessage());
     }
+
+    // Using generators
+    foreach (generateNumbers(5) as $number) {
+        echo "Generated number: $number\n";
+    }
+
+    // Using fibers
+    $fiber = new Fiber(function (): void {
+        echo "Fiber started\n";
+        Fiber::suspend();
+        echo "Fiber resumed\n";
+    });
+
+    echo "Starting fiber\n";
+    $fiber->start();
+    echo "Resuming fiber\n";
+    $fiber->resume();
 }
 
-/**
- * Custom println function to print a message with a new line
- * 
- * @param string $msg
- * @return void
- */
-function println(string $msg): void 
-{
-    echo $msg . "\n";
-}
-
-run();
+main();
