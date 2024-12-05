@@ -20,7 +20,18 @@ enum Days {
 }
 
 /**
+ * Attribute for marking a method as deprecated
+ */
+#[Attribute]
+class Deprecated {
+    public function __construct(
+        public string $message
+    ) {}
+}
+
+/**
  * Interface for a person
+ * @link https://www.php.net/manual/en/language.oop5.interfaces.php
  */
 interface IPerson {
     /**
@@ -98,18 +109,19 @@ final class Person extends AbstractPerson {
      *
      * @return void
      */
+    #[Deprecated("Use the new greet method instead")]
     public function greet(): void {
         echo "Hello, {$this->name}!\n";
     }
 }
 
 /**
-  * Add two numbers
-  *
-  * @param int $a
-  * @param int $b
-  * @return int
-  */
+ * Add two numbers
+ *
+ * @param int $a
+ * @param int $b
+ * @return int
+ */
 function add(int $a, int $b): int {
     return $a + $b;
 }

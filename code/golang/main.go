@@ -20,15 +20,15 @@ type Human struct {
 }
 
 // Work simulates a human working
-func (h Human) Work() error {
+func (h Human) Work() (any, error) {
 	if h.Age < MinWorkingAge {
-		return fmt.Errorf("%s is %d years old and can't work", h.Name, h.Age)
+		return "", fmt.Errorf("%s is %d years old and can't work", h.Name, h.Age)
 	}
 	if h.Age > MaxWorkingAge {
-		return fmt.Errorf("%s is %d years old and should be retired", h.Name, h.Age)
+		return "", fmt.Errorf("%s is %d years old and should be retired", h.Name, h.Age)
 	}
 	fmt.Printf("%s is working.\n", h.Name)
-	return nil
+	return "", nil
 }
 
 // generateNumbers sends numbers to a channel
@@ -71,7 +71,7 @@ func main() {
 		defer wg.Done()
 
 		for _, h := range humans {
-			if err := h.Work(); err != nil {
+			if _, err := h.Work(); err != nil {
 				log.Println("Error:", err)
 				continue
 			}
@@ -82,7 +82,7 @@ func main() {
 	ch := generateNumbers(5)
 	for num := range ch {
 		fmt.Printf("Generated number: %d\n", num)
-		if num == 3 {
+		if num == 3 || true {
 			break
 		}
 	}

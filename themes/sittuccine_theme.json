@@ -902,10 +902,13 @@
 		{
 			"scope": [
 				"source",
+				"support.type",
 				"variable.other.php",
 				"variable.other.property.go",
 				"storage.type.function.arrow",
 				"meta.template.expression",
+				"storage.modifier.import.java",
+				"variable.parameter",
 			],
 			"settings": {
 				"foreground": "#BCBEC4"
@@ -968,11 +971,64 @@
 				"storage.type.modifier.access.control.protected.cpp",
 				"storage.type.modifier.access.control.private.cpp",
 				"storage.type.enum.php",
-				"punctuation.definition.variable"
+				"punctuation.definition.variable",
+				"variable.parameter.function.language.special.self.python",
 			],
 			"settings": {
 				"foreground": "#ebab7e"  // ebab7e CF8E6D cf6d6d bf85d3 ebab7e
 			}
+		},
+		{
+			"scope": [
+				"keyword.operator.address.go", 
+				"storage.type.error.go",
+				"keyword.operator.channel.go",
+				"keyword.control.exception.php",
+				"storage.modifier.reference.php",
+				"keyword.control.exception.catch.php",
+				"keyword.control.throw.java",
+				"keyword.control.try.java",
+				"variable.language.wildcard.java",
+				"keyword.control.trycatch.ts",
+				"keyword.control.trycatch.js",
+				"keyword.control.catch.java",
+				"keyword.control.try.cpp",
+				"keyword.control.catch.cpp",
+				"keyword.control.try.cs",
+				"keyword.control.try.catch.cs",
+			],
+			"settings": {
+				"foreground": "#f37272"
+			}
+		},
+		{
+			"scope": [
+				"string.quoted.double", // Строки в двойных кавычках
+				"string.quoted.single", // Строки в одинарных кавычках
+				"string.unquoted.less",
+			],
+			"settings": {
+				"foreground": "#d4c578", // EBD77C d9a668 d0a853 d0c153
+			},
+		},
+		{
+			"scope": [
+				"storage.type.annotation.java",
+				"meta.attribute.php"
+			],
+			"settings": {
+				"foreground": "#EBD77C", // EBD77C d9a668 d0a853 d0c153
+			},
+		},
+		{
+			"scope": [
+				"string.quoted.raw", // Строки в тильдах
+				"string.template",
+				"constant.other.placeholder"
+			],
+			"settings": {
+				"foreground": "#b2ea8f", // d5ec7a
+			},
 		},
 		{
 			"scope": [
@@ -981,6 +1037,14 @@
 			],
 			"settings": {
 				"foreground": "#D5B778" // D5B778
+			}
+		},
+		{
+			"scope": [
+				"entity.name.function.decorator"
+			],
+			"settings": {
+				"foreground": "#B3AE60"
 			}
 		},
 		{
@@ -1002,7 +1066,7 @@
 				"support.class",
 				"support.class.exception",
 				"support.class.builtin",
-				"variable.parameter.java",
+				"entity.other.inherited-class.java",
 				"support.constant.property-value.css.sass",
 				"support.constant.property-value.css",
 				"support.constant.font-name.css",
@@ -1012,7 +1076,7 @@
 				"support.constant.color.w3c-standard-color-name.css",
 				"entity.other.attribute-name.class.less",
 				"support.type.primitive.ts",
-				"entity.other.inherited-class.php",
+				"entity.other.inherited-class.php"
 			],
 			"settings": {
 				"foreground": "#6fc0e6", // 6eb1d0
@@ -1030,7 +1094,6 @@
 		},
 		{
 			"scope": [
-				"variable.parameter",
 				"variable.other.import.go",
 				"meta.function.parameter.typehinted.php",
 				"meta.function.parameters.php",
@@ -1041,6 +1104,10 @@
 		},
 		{
 			"scope": [
+				"punctuation.definition.link",
+				"string.other.link",
+				"markup.underline.link",
+				"meta.link",
 				"variable.other.readwrite.alias",
 				"entity.name.function",
 				"entity.name.function.call",
@@ -1055,25 +1122,20 @@
 			"scope": [
 				"support.function.builtin",
 				"entity.name.function.support.builtin",
-				// "support.type",
 				"support.function.constructor.php",
 				"meta.function-call.php",
 				"support.function.construct.output.php",
 				"keyword.control.except.python",
 				"entity.other.inherited-class.placeholder-selector.css.sass",
 				"entity.name.function.definition.special.constructor.cpp",
-				"entity.name.function.definition.special.member.destructor.cpp"
+				"entity.name.function.definition.special.member.destructor.cpp",
+				"meta.function-call.generic.python",
+				"entity.name.function.support.builtin",
+				"function.builtin",
+				"support.function.magic.python"
 			],
 			"settings": {
 				"foreground": "#8cbf7d" //  8888C6
-			}
-		},
-		{
-			"scope": [
-				"entity.name.function.decorator"
-			],
-			"settings": {
-				"foreground": "#B3AE60"
 			}
 		},
 		{
@@ -1087,21 +1149,10 @@
 		},
 		{
 			"scope": [
-				"entity.name.function.support.builtin",
-				"function.builtin",
-				"support.function.magic.python",
-			],
-			"settings": {
-				"foreground": "#8cbf7d" // 6AAB73
-			}
-		},
-		{
-			"scope": [
 				"meta.object-literal.key",
 				"variable.other.object.property",
 				"variable.other.property",
 				"variable.object.property",
-				"constant.language.php",
 				"sass.script.maps",
 				"variable.other.root",
 				"variable.other.value",
@@ -1109,7 +1160,7 @@
 				"punctuation.definition.variable.less",
 				"support.other.variable.less",
 				"constant.other.php",
-				"constant.language"
+				"meta.attribute.python"
 			],
 			"settings": {
 				"foreground": "#d68cca" // C77DBB
@@ -1117,10 +1168,10 @@
 		},
 		{
 			"scope": [
-				"variable.parameter.function-call"
+				"constant.language",
 			],
 			"settings": {
-				"foreground": "#d78ae8"
+				"foreground": "#818bf5" // d78ae8 f581ce
 			}
 		},
 		{
@@ -1129,17 +1180,6 @@
 			],
 			"settings": {
 				"foreground": "#2FBAA3"
-			}
-		},
-		{
-			"scope": [
-				"punctuation.definition.link",
-				"string.other.link",
-				"markup.underline.link",
-				"meta.link"
-			],
-			"settings": {
-				"foreground": "#56A8F5"
 			}
 		},
 		{
@@ -1172,66 +1212,6 @@
 				"foreground": "#B267E6"
 			}
 		},
-		// ------------- GOLANG ------------------
-		// {
-		// 	"scope": [
-		// 		"keyword.function.go",
-		// 		"keyword.type.go",
-		// 		"keyword.struct.go",
-		// 		"keyword.interface.go",
-		// 		"keyword.control.import.go",
-		// 		"keyword.var", 
-		// 	], 
-		// 	"settings": {
-		// 		"foreground": "#CD9731"
-		// 	}
-		// },
-		{
-			"scope": [
-				"keyword.operator.address.go", // Указатель
-				"keyword.operator.logical",
-				"keyword.control.exception.php",
-				"storage.modifier.reference.php",
-				"keyword.control.throw.java",
-				"keyword.control.try.java",
-				"keyword.control.trycatch.ts",
-				"keyword.control.trycatch.js",
-				"keyword.control.catch.java",
-				"keyword.control.exception.catch.php",
-				"keyword.control.try.cpp",
-				"keyword.control.catch.cpp",
-				"keyword.control.try.cs",
-				"storage.type.error.go",
-				// "keyword.control.try.catch.cs"
-			],
-			"settings": {
-				"foreground": "#f37272"
-			}
-		},
-		// ------------- GOLANG ------------------
-		
-		// ------ СТРоки -------
-		{
-			"scope": [
-				"string.quoted.double", // Строки в двойных кавычках
-				"string.quoted.single", // Строки в одинарных кавычках
-				"string.unquoted.less"
-			],
-			"settings": {
-				"foreground": "#EBD77C", 
-			},
-		},
-		{
-			"scope": [
-				"string.quoted.raw", // Строки в тильдах
-				"string.template"
-			],
-			"settings": {
-				"foreground": "#b2ea8f", // d5ec7a
-			},
-		},
-		// ------ СТРоки -------
-		// ------- Типы данных
 	],
 	"semanticTokenColors": {
 		"function": {
