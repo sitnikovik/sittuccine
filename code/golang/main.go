@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"sync"
-	"time"
+	time "time"
 )
 
 // Constants

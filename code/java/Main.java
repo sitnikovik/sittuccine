@@ -121,13 +121,18 @@ class Employee extends Person {
     }
 }
 
-// Functional interface
+
 @FunctionalInterface
 interface MathOperation {
     int operate(int a, int b);
 }
 
-// Main class
+/**
+ * Main class containing the main method.
+ * 
+ * @version 1.0
+ * @since 1.0
+ */
 public class Main {
     // Method with multiple return values using an array
     public static int[] addAndMultiply(int a, int b) {

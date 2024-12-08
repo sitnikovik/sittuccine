@@ -3,3 +3,4 @@
 VERSION
 *.vsix
 themes/copy_*_theme.json
+.DS_Store
