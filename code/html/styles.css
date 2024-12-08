@@ -1,0 +1,141 @@
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Type selectors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Class selectors */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* ID selectors */
+#header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Attribute selectors */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Pseudo-classes */
+a:link {
+    color: #007bff;
+}
+
+a:visited {
+    color: #0056b3;
+}
+
+a:hover {
+    color: #003f7f;
+}
+
+a:active {
+    color: #001f3f;
+}
+
+/* Pseudo-elements */
+p::first-line {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 2em;
+    color: #007bff;
+}
+
+/* Descendant selectors */
+nav ul li {
+    list-style-type: none;
+}
+
+/* Child selectors */
+ul > li {
+    margin-bottom: 10px;
+}
+
+/* Adjacent sibling selectors */
+h1 + p {
+    margin-top: 0;
+}
+
+/* General sibling selectors */
+h1 ~ p {
+    color: #666;
+}
+
+/* Grouping selectors */
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+/* Combinators */
+div.container > p {
+    color: #333;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
