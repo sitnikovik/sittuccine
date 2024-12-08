@@ -1,6 +1,10 @@
 # Sittuccine Theme
 
-Sittuccine Theme is a custom dark theme for Visual Studio Code, designed to provide a comfortable and visually appealing coding experience. The theme made with love for the best developers who needs the best code highlighting and readability.
+Sittuccine Theme is a custom dark theme for Visual Studio Code, designed to provide a comfortable and visually appealing coding experience. The theme **made with love** for the **best developers** who needs the best code highlighting and readability.
+
+## ⭐️ Star on GitHub
+
+If you like this theme, please consider giving it a star on [GitHub](https://github.com/sitnikovik/sittuccine-vscode-theme)! Your support is greatly appreciated and helps me to keep improving the theme.
 
 ## Features
 
@@ -20,10 +24,6 @@ Sittuccine Theme is a custom dark theme for Visual Studio Code, designed to prov
     - Typescript
     - HTML
     - CSS, SCSS, SASS, LESS,
-
-## ⭐️ Star on GitHub
-
-If you like this theme, please consider giving it a star on [GitHub](https://github.com/sitnikovik/sittuccine-vscode-theme)! Your support is greatly appreciated and helps me to keep improving the theme.
 
 ## Preview
 
