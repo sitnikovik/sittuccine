@@ -1,17 +1,40 @@
 {
-    "name": "sittuccine",
-    "displayName": "Sittuccine",
-    "description": "A custom Monokai theme for VSCode.",
+    "publisher": "sitnikovik",
+    "name": "sittuccine-theme",
+    "displayName": "Sittuccine Theme",
+    "description": "The theme made with love for the best developers who needs the best code highlighting and readability.",
     "version": "1.0.0",
+    "author": "Ilya Sitnikov <sitnikovik@gmail.com>",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/sitnikovik/sittuccine-vscode-theme"
+    },
+    "bugs": {
+        "url": "https://github.com/sitnikovik/sittuccine-vscode-theme/issues"
     },
     "engines": {
         "vscode": "^1.50.0"
     },
     "categories": [
         "Themes"
+    ],
+    "homepage": "https://github.com/sitnikovik/sittuccine-vscode-theme/blob/master/README.md",
+    "keywords": [
+        "theme",
+        "dark",
+        "new dark",
+        "dark+",
+        "monokai",
+        "jetbrains",
+        "jet brains",
+        "darcula",
+        "dracula",
+        "sittuccine",
+        "orange",
+        "vscode",
+        "color scheme",
+        "syntax highlighting"
     ],
     "contributes": {
         "themes": [
