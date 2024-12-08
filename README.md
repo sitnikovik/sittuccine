@@ -9,17 +9,17 @@ Sittuccine Theme is a custom dark theme for Visual Studio Code, designed to prov
 - **Throw** blocks highlighted in **red** to attract attention
 - **Docs** highlighted in **green**
 - The colors selected manually for languages:
-    1. Golang
-    2. Python
-    3. PHP
-    4. Java
-    5. C#
-    6. C++
-    7. C
-    8. Javascript
-    9. Typescript
-    10. HTML
-    11. CSS, SCSS, SASS, LESS,
+    - Golang
+    - Python
+    - PHP
+    - Java
+    - C#
+    - C++
+    - C
+    - Javascript
+    - Typescript
+    - HTML
+    - CSS, SCSS, SASS, LESS,
 
 ## ⭐️ Star on GitHub
 
