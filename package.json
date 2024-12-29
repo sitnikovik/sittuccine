@@ -36,6 +36,7 @@
         "color scheme",
         "syntax highlighting"
     ],
+    "icon": "logo.png",
     "contributes": {
         "themes": [
             {

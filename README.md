@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="logo.png" width="180" alt="Sittuccine Theme">
+</p>
+
 # Sittuccine Theme
 
 Sittuccine Theme is a custom dark theme for Visual Studio Code, designed to provide a comfortable and visually appealing coding experience. The theme **made with love** for the **best developers** who needs the best code highlighting and readability.
