@@ -915,6 +915,10 @@
 				"meta.template.expression",
 				"storage.modifier.import.java",
 				"variable.parameter",
+				"variable.language.this.php",
+				"variable.language.this.java",
+				"variable.language.this.js",
+				"variable.language.this.ts"
 			],
 			"settings": {
 				"foreground": "#BCBEC4"
@@ -970,7 +974,6 @@
 				"constant.other.color.rgb-value.less",
 				"storage.type.interface.ts",
 				"storage.type.class.ts",
-				"variable.language.this.ts",
 				"storage.type.class.cpp",
 				"storage.type.enum.cpp",
 				"storage.type.modifier.access.control.public.cpp",
@@ -1131,6 +1134,7 @@
 				"support.function.constructor.php",
 				"meta.function-call.php",
 				"support.function.construct.output.php",
+				"support.function.magic.php",
 				"keyword.control.except.python",
 				"entity.other.inherited-class.placeholder-selector.css.sass",
 				"entity.name.function.definition.special.constructor.cpp",
@@ -1147,7 +1151,7 @@
 		{
 			"scope": [
 				"variable.other.global.safer.php",
-				"meta.function-call.ts",
+				"meta.function-call.ts"
 			],
 			"settings": {
 				"foreground": "#9fcefb"
