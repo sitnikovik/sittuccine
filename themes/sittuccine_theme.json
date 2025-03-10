@@ -1085,7 +1085,7 @@
 				"support.constant.color.w3c-standard-color-name.css",
 				"entity.other.attribute-name.class.less",
 				"support.type.primitive.ts",
-				"entity.other.inherited-class.php"
+				"entity.other.inherited-class.php",
 			],
 			"settings": {
 				"foreground": "#6fc0e6",
@@ -1113,6 +1113,14 @@
 		},
 		{
 			"scope": [
+				"source.sql text.variable"
+			],
+			"settings": {
+				"fontStyle": "bold",
+			}
+		},
+		{
+			"scope": [
 				"punctuation.definition.link",
 				"string.other.link",
 				"markup.underline.link",
@@ -1121,7 +1129,7 @@
 				"entity.name.function",
 				"entity.name.function.call",
 				"support.function.color-operation.less",
-				"meta.function-call.cs"
+				"meta.function-call.cs",
 			],
 			"settings": {
 				"foreground": "#56A8F5"
@@ -1142,7 +1150,8 @@
 				"meta.function-call.generic.python",
 				"entity.name.function.support.builtin",
 				"function.builtin",
-				"support.function.magic.python"
+				"support.function.magic.python",
+				"constant.other.database-name.sql"
 			],
 			"settings": {
 				"foreground": "#8cbf7d"
@@ -1151,7 +1160,7 @@
 		{
 			"scope": [
 				"variable.other.global.safer.php",
-				"meta.function-call.ts"
+				"meta.function-call.ts",
 			],
 			"settings": {
 				"foreground": "#9fcefb"
@@ -1170,7 +1179,8 @@
 				"punctuation.definition.variable.less",
 				"support.other.variable.less",
 				"constant.other.php",
-				"meta.attribute.python"
+				"meta.attribute.python",
+				"constant.other.table-name.sql",
 			],
 			"settings": {
 				"foreground": "#d68cca"
