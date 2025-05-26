@@ -934,9 +934,6 @@
 		},
 		{
 			"scope": [
-				"string.quoted",
-				"string.template",
-				"markup.inline.raw.string",
 				"string.quoted.docstring",
 				"comment.block.documentation.phpdoc.php",
 				"comment.block.javadoc.java",
@@ -944,6 +941,14 @@
 			],
 			"settings": {
 				"foreground": "#67956f"
+			}
+		},
+		{
+			"scope": [
+				"string.quoted.rune.go"
+			],
+			"settings": {
+				"foreground": "#ea7f04"
 			}
 		},
 		{
@@ -1014,6 +1019,8 @@
 				"string.quoted.double",
 				"string.quoted.single",
 				"string.unquoted.less",
+				"markup.inline.raw.string",
+				"string.template"
 			],
 			"settings": {
 				"foreground": "#d4c578",
@@ -1179,6 +1186,7 @@
 				"punctuation.definition.variable.less",
 				"support.other.variable.less",
 				"constant.other.php",
+				"constant.other.class.php",
 				"meta.attribute.python",
 				"constant.other.table-name.sql",
 			],
