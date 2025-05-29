@@ -28,22 +28,74 @@ If you like this theme, please consider giving it a star on [GitHub](https://git
     - Typescript
     - HTML
     - CSS, SCSS, SASS, LESS,
+    - SQL
 
 ## Preview
 
-**Python** ![Python](./previews/python.png)
+### Python
 
-**Golang** ![Golang](./previews/golang.png)
+**Dark**
+![Python Dark](./previews/python_dark.png)
 
-**Java** ![Java](./previews/java.png)
+**Light**
+![Python Light](./previews/python_light.png)
 
-**C#** ![C#](./previews/csharp.png)
+### Golang
 
-**Typescript** ![Typescript](./previews/typescript.png)
+**Dark**
+![Golang Dark](./previews/golang_dark.png)
 
-**HTML** ![Preview 1](./previews/html.png)
+**Light**
+![Golang Light](./previews/golang_light.png)
 
-**SCSS** ![Preview 2](./previews/scss.png)
+### Java
+
+**Dark**
+![Java Dark](./previews/java_dark.png)
+
+**Light**
+![Java Light](./previews/java_light.png)
+
+### C#
+
+**Dark**
+![C# Dark](./previews/csharp_dark.png)
+
+**Light**
+![C# Light](./previews/csharp_light.png)
+
+### SQL
+
+**Dark**
+![SQL Dark](./previews/sql_dark.png)
+
+**Light**
+![SQL Light](./previews/sql_light.png)
+
+### Typescript
+
+**Dark**
+![Typescript Dark](./previews/typescript_dark.png)
+
+**Light**
+![Typescript Light](./previews/typescript_light.png)
+
+### HTML
+
+**Dark**
+![HTML Dark](./previews/html_dark.png)
+
+**Light**
+![HTML Light](./previews/html_light.png)
+
+### SCSS
+
+**Dark**
+![SCSS Dark](./previews/scss_dark.png)
+
+**Light**
+![SCSS Light](./previews/scss_light.png)
+
 
 ## Installation
 
