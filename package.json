@@ -42,7 +42,7 @@
             {
                 "label": "Sittuccine Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/sittuccine_theme.json"
+                "path": "./themes/sittuccine_theme_dark.json"
             },
             {
                 "label": "Sittuccine Light",
