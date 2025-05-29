@@ -40,9 +40,14 @@
     "contributes": {
         "themes": [
             {
-                "label": "Sittuccine",
+                "label": "Sittuccine Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/sittuccine_theme.json"
+            },
+            {
+                "label": "Sittuccine Light",
+                "uiTheme": "vs",
+                "path": "./themes/sittuccine_theme_light.json"
             }
         ]
     }
