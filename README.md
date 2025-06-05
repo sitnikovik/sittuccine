@@ -109,9 +109,9 @@ If you like this theme, please consider giving it a star on [GitHub](https://git
 
 ### Manual Installation
 
-1. Download the latest `.vsix` file from the [releases page](https://github.com/your-repo/sittuccine-theme/releases).
+1. Download the latest `.vsix` file from the [releases page](https://github.com/sitnikovik/sittuccine-vscode-theme/releases).
 2. Open Visual Studio Code.
 3. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
 4. Click on the three dots in the upper right corner and select "Install from VSIX...".
 5. Select the downloaded `.vsix` file to install the theme.
-6. Go to `File > Preferences > Color Theme` and select "Sittuccine Theme" from the list.
+6. Go to `File > Preferences > Color Theme` and select "Sittuccine Dark" or another from the list.
