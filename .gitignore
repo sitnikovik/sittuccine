@@ -3,3 +3,4 @@
 VERSION
 *.vsix
 .DS_Store
+code/
