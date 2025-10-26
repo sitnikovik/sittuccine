@@ -982,7 +982,12 @@
 				"string.quoted.docstring",
 				"comment.block.documentation.phpdoc.php",
 				"comment.block.javadoc.java",
-				"comment.block.documentation.js"
+				"comment.block.documentation.js",
+				"support.variable.definitions.source.wsd",
+				"meta.comment.message.link.source.wsd",
+				"meta.comment.noteof.source.wsd",
+				"meta.comment.header_legend_footer.source.wsd",
+				"entity.name.function.title.source.wsd",
 			],
 			"settings": {
 				"foreground": "#67956f"
@@ -1086,6 +1091,7 @@
 				"string.quoted.raw",
 				"string.template",
 				"constant.other.placeholder",
+				"string.quoted.double.sequence.divider.source.wsd",
 			],
 			"settings": {
 				"foreground": "#55c80e",
@@ -1113,6 +1119,7 @@
 			"scope": [
 				"constant.numeric",
 				"constant.character.escape",
+				"string.quoted.double.skinparam.value.source.wsd"
 			],
 			"settings": {
 				"foreground": "#0ea9b4"
