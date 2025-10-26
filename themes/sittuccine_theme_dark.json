@@ -937,7 +937,12 @@
 				"string.quoted.docstring",
 				"comment.block.documentation.phpdoc.php",
 				"comment.block.javadoc.java",
-				"comment.block.documentation.js"
+				"comment.block.documentation.js",
+				"support.variable.definitions.source.wsd",
+				"meta.comment.message.link.source.wsd",
+				"meta.comment.noteof.source.wsd",
+				"meta.comment.header_legend_footer.source.wsd",
+				"entity.name.function.title.source.wsd",
 			],
 			"settings": {
 				"foreground": "#67956f"
@@ -1020,7 +1025,7 @@
 				"string.quoted.single",
 				"string.unquoted.less",
 				"markup.inline.raw.string",
-				"string.template"
+				"string.template",
 			],
 			"settings": {
 				"foreground": "#d4c578",
@@ -1029,7 +1034,7 @@
 		{
 			"scope": [
 				"storage.type.annotation.java",
-				"meta.attribute.php"
+				"meta.attribute.php",
 			],
 			"settings": {
 				"foreground": "#EBD77C",
@@ -1040,7 +1045,8 @@
 				"string.quoted.raw",
 				"string.template",
 				"constant.other.placeholder",
-				"string.quoted.double.html"
+				"string.quoted.double.html",
+				"string.quoted.double.sequence.divider.source.wsd",
 			],
 			"settings": {
 				"foreground": "#b2ea8f",
@@ -1057,7 +1063,7 @@
 		},
 		{
 			"scope": [
-				"entity.name.function.decorator"
+				"entity.name.function.decorator",
 			],
 			"settings": {
 				"foreground": "#B3AE60"
@@ -1067,6 +1073,7 @@
 			"scope": [
 				"constant.numeric",
 				"constant.character.escape",
+				"string.quoted.double.skinparam.value.source.wsd",
 			],
 			"settings": {
 				"foreground": "#2ab1b8"
