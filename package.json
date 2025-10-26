@@ -3,15 +3,15 @@
     "name": "sittuccine-theme",
     "displayName": "Sittuccine Theme",
     "description": "The theme made with love for the best developers who needs the best code highlighting and readability.",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "author": "Ilya Sitnikov <sitnikovik@gmail.com>",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/sitnikovik/sittuccine-vscode-theme"
+        "url": "https://github.com/sitnikovik/sittuccine"
     },
     "bugs": {
-        "url": "https://github.com/sitnikovik/sittuccine-vscode-theme/issues"
+        "url": "https://github.com/sitnikovik/sittuccine/issues"
     },
     "engines": {
         "vscode": "^1.50.0"
@@ -19,7 +19,7 @@
     "categories": [
         "Themes"
     ],
-    "homepage": "https://github.com/sitnikovik/sittuccine-vscode-theme/blob/master/README.md",
+    "homepage": "https://github.com/sitnikovik/sittuccine/blob/master/README.md",
     "keywords": [
         "sittuccine",
         "theme",
@@ -60,7 +60,8 @@
         "scss",
         "less",
         "sass",
-        "sql"
+        "sql",
+        "plantuml"
     ],
     "icon": "logo.png",
     "contributes": {
