@@ -4,7 +4,7 @@
 
 # Sittuccine Theme
 
-Sittuccine Theme is a custom dark theme for Visual Studio Code, designed to provide a comfortable and visually appealing coding experience. The theme **made with love** for the **best developers** who needs the best code highlighting and readability.
+Sittuccine Theme is a custom theme for editors, designed to provide a comfortable and visually appealing coding experience. The theme **made with love** for the **best developers** who needs the best code highlighting and readability.
 
 ## ⭐️ Star on GitHub
 
@@ -99,7 +99,9 @@ If you like this theme, please consider giving it a star on [GitHub](https://git
 
 ## Installation
 
-### From Visual Studio Code Marketplace
+### VSCode
+
+#### From Visual Studio Code Marketplace
 
 1. Open Visual Studio Code.
 2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
@@ -107,7 +109,7 @@ If you like this theme, please consider giving it a star on [GitHub](https://git
 4. Click "Install" to install the theme.
 5. Go to `File > Preferences > Color Theme` and select "Sittuccine Theme" from the list.
 
-### Manual Installation
+#### Manual Installation
 
 1. Download the latest `.vsix` file from the [releases page](https://github.com/sitnikovik/sittuccine-vscode-theme/releases).
 2. Open Visual Studio Code.
@@ -115,3 +117,17 @@ If you like this theme, please consider giving it a star on [GitHub](https://git
 4. Click on the three dots in the upper right corner and select "Install from VSIX...".
 5. Select the downloaded `.vsix` file to install the theme.
 6. Go to `File > Preferences > Color Theme` and select "Sittuccine Dark" or another from the list.
+
+### Zed
+
+This repository also contains a Zed version of the theme under `zed/`.
+
+- `zed/extension.toml` - Zed extension manifest
+- `zed/themes/sittuccine.json` - bundled `Sittuccine Dark` and `Sittuccine Light` themes
+
+#### Manual Installation
+
+1. Clone this repository.
+2. Open Zed and run `Ctrl+Shift+P` to open the command palette.
+3. Go to `zed: extentions`
+4. Press `Intall Dev Extention` and open `zed/` directory from the cloned repository
