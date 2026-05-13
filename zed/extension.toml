@@ -1,7 +1,8 @@
 id = "sittuccine"
 name = "Sittuccine"
-version = "1.2.1"
+version = "1.2.2"
 schema_version = 1
 authors = ["Ilya Sitnikov <sitnikovik@gmail.com>"]
+repository = "https://github.com/sitnikovik/sittuccine"
 description = "Sittuccine dark and light themes for Zed. Made with love for the best developers who needs the best code highlighting and readability"
 path = "zed"
