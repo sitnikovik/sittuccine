@@ -1,81 +1,81 @@
 {
-    "publisher": "sitnikovik",
-    "name": "sittuccine-theme",
-    "displayName": "Sittuccine Theme",
-    "description": "The theme made with love for the best developers who needs the best code highlighting and readability.",
-    "version": "1.1.1",
-    "author": "Ilya Sitnikov <sitnikovik@gmail.com>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sitnikovik/sittuccine"
-    },
-    "bugs": {
-        "url": "https://github.com/sitnikovik/sittuccine/issues"
-    },
-    "engines": {
-        "vscode": "^1.50.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "homepage": "https://github.com/sitnikovik/sittuccine/blob/master/README.md",
-    "keywords": [
-        "sittuccine",
-        "theme",
-        "dark",
-        "new dark",
-        "dark+",
-        "monokai",
-        "jetbrains",
-        "jet brains",
-        "darcula",
-        "dracula",
-        "sittuccine",
-        "orange",
-        "vscode",
-        "color scheme",
-        "syntax highlighting",
-        "light",
-        "light theme",
-        "light+",
-        "light+ theme",
-        "color",
-        "beatiful",
-        "golang",
-        "go",
-        "javascript",
-        "js",
-        "typescript",
-        "ts",
-        "python",
-        "py",
-        "php",
-        "java",
-        "csharp",
-        "c++",
-        "c",
-        "html",
-        "css",
-        "scss",
-        "less",
-        "sass",
-        "sql",
-        "plantuml"
-    ],
-    "icon": "logo.png",
-    "contributes": {
-        "themes": [
-            {
-                "label": "Sittuccine Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/sittuccine_theme_dark.json"
-            },
-            {
-                "label": "Sittuccine Light",
-                "uiTheme": "vs",
-                "path": "./themes/sittuccine_theme_light.json"
-            }
-        ]
-    }
+  "publisher": "sitnikovik",
+  "name": "sittuccine-theme",
+  "displayName": "Sittuccine Theme",
+  "description": "The theme made with love for the best developers who needs the best code highlighting and readability.",
+  "version": "1.1.1",
+  "author": "Ilya Sitnikov <sitnikovik@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sitnikovik/sittuccine"
+  },
+  "bugs": {
+    "url": "https://github.com/sitnikovik/sittuccine/issues"
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "homepage": "https://github.com/sitnikovik/sittuccine/blob/master/README.md",
+  "keywords": [
+    "sittuccine",
+    "theme",
+    "dark",
+    "new dark",
+    "dark+",
+    "monokai",
+    "jetbrains",
+    "jet brains",
+    "darcula",
+    "dracula",
+    "sittuccine",
+    "orange",
+    "vscode",
+    "color scheme",
+    "syntax highlighting",
+    "light",
+    "light theme",
+    "light+",
+    "light+ theme",
+    "color",
+    "beatiful",
+    "golang",
+    "go",
+    "javascript",
+    "js",
+    "typescript",
+    "ts",
+    "python",
+    "py",
+    "php",
+    "java",
+    "csharp",
+    "c++",
+    "c",
+    "html",
+    "css",
+    "scss",
+    "less",
+    "sass",
+    "sql",
+    "plantuml"
+  ],
+  "icon": "logo.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sittuccine Dark",
+        "uiTheme": "vs-dark",
+        "path": "./vscode/themes/sittuccine_theme_dark.json"
+      },
+      {
+        "label": "Sittuccine Light",
+        "uiTheme": "vs",
+        "path": "./vscode/themes/sittuccine_theme_light.json"
+      }
+    ]
+  }
 }
