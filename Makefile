@@ -4,7 +4,7 @@
 OUTPUT := $(CURDIR)/sittuccine-theme.vsix
 
 build:
-	vsce package -o ${OUTPUT}
+	@cd vscode && vsce package -o ${OUTPUT}
 
 install:
 	code --install-extension ${OUTPUT}
