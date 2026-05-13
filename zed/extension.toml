@@ -1,0 +1,7 @@
+id = "sittuccine"
+name = "Sittuccine"
+version = "1.2.1"
+schema_version = 1
+authors = ["Ilya Sitnikov <sitnikovik@gmail.com>"]
+description = "Sittuccine dark and light themes for Zed. Made with love for the best developers who needs the best code highlighting and readability"
+path = "zed"
