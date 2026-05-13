@@ -1,17 +1,20 @@
-.PHONY: build restart run
-.DEFAULT_GOAL := run
+.DEFAULT_GOAL := vscode-run
 
 OUTPUT := $(CURDIR)/sittuccine-theme.vsix
 
-build:
+.PHONY: vscode-build
+vscode-build:
 	@cd vscode && vsce package -o ${OUTPUT}
 
-install:
+.PHONY: vscode-install
+vscode-install:
 	code --install-extension ${OUTPUT}
 
-restart:
+.PHONY: vscode-restart
+vscode-restart:
 	osascript -e 'quit app "Visual Studio Code"' && \
 	sleep 3 && \
 	open -a "Visual Studio Code"
 
-run: build install restart
+.PHONY: vscode-run
+vscode-run: build install restart
