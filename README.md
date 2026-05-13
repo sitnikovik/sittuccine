@@ -8,7 +8,7 @@ Sittuccine Theme is a custom theme for editors, designed to provide a comfortabl
 
 ## ⭐️ Star on GitHub
 
-If you like this theme, please consider giving it a star on [GitHub](https://github.com/sitnikovik/sittuccine-vscode-theme)! Your support is greatly appreciated and helps me to keep improving the theme.
+If you like this theme, please consider giving it a star on [GitHub](https://github.com/sitnikovik/sittuccine)! Your support is greatly appreciated and helps me to keep improving the theme.
 
 ## Features
 
@@ -111,7 +111,7 @@ If you like this theme, please consider giving it a star on [GitHub](https://git
 
 #### Manual Installation
 
-1. Download the latest `.vsix` file from the [releases page](https://github.com/sitnikovik/sittuccine-vscode-theme/releases).
+1. Download the latest `.vsix` file from the [releases page](https://github.com/sitnikovik/sittuccine/releases).
 2. Open Visual Studio Code.
 3. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
 4. Click on the three dots in the upper right corner and select "Install from VSIX...".
